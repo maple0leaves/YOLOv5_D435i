@@ -59,8 +59,9 @@ yolov5_D435i_2.0/config/yolov5s.yaml中的target是您想要检测距离的类�
 ![](https://github.com/maple0leaves/YOLOv5_D435i/blob/master/yolov5_D435i_2.0/image/distance.png)
 ![](https://github.com/maple0leaves/YOLOv5_D435i/blob/master/yolov5_D435i_2.0/image/distance.gif)
 ## 4.Reference
-[](https://github.com/ultralytics/yolov5)
-[](https://github.com/killnice/yolov5-D435i)
-[](https://github.com/Thinkin99/yolov5_d435i_detection)
+[https://github.com/ultralytics/yolov5](https://github.com/ultralytics/yolov5)
+[https://github.com/killnice/yolov5-D435i](https://github.com/killnice/yolov5-D435i)
+[https://github.com/Thinkin99/yolov5_d435i_detection](https://github.com/Thinkin99/yolov5_d435i_detection)
 ## 5.More Detail
+想要了解本人开发过程请看
 []()
