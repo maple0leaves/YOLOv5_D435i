@@ -16,7 +16,7 @@ Combined with YOLOv5 to develop Intel_Realsense_D435i to realize real-time detec
 ```
   
 ### Use:
-配置yolov5_D435i_2.0/config/yolov5s.yaml,运行yolov5_D435i_2.0/config/main.py即可
+配置yolov5_D435i_2.0/config/yolov5s.yaml,运行yolov5_D435i_2.0/config/main2.py即可
 
 yolov5_D435i_2.0/config/yolov5s.yaml:
 ```
