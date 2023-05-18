@@ -18,6 +18,40 @@ Combined with YOLOv5 to develop Intel_Realsense_D435i to realize real-time detec
 ### Use:
 配置yolov5_D435i_2.0/config/yolov5s.yaml,运行yolov5_D435i_2.0/config/main.py即可
 
-#Result
-![]()
-![]()
+yolov5_D435i_2.0/config/yolov5s.yaml:
+```
+weight:  "weights/yolov5s.pt"
+# 输入图像的尺寸
+input_size: [640,480]
+# 类别个数
+class_num:  80
+# 标签名称
+class_name: [ 'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light',
+         'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
+         'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee',
+         'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard',
+         'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
+         'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch',
+         'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone',
+         'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase', 'scissors', 'teddy bear',
+         'hair drier', 'toothbrush' ]
+# 阈值设置
+threshold:
+  iou: 0.45
+  confidence: 0.6
+# 计算设备
+# - cpu
+# - 0 <- 使用GPU
+device: '0'
+target: ['person']#检测哪些类别之间的距离 which objects you want to detect
+```
+## 2.Attenion
+分辨率好像只能改特定的参数，不然会报错。d435i可以用 1280x720, 640x480, 848x480。
+```
+config.enable_stream(rs.stream.depth, 1280, 720, rs.format.z16, 30)
+config.enable_stream(rs.stream.color, 1280, 720, rs.format.bgr8, 30)
+```
+
+## 3.Result
+![](https://github.com/maple0leaves/YOLOv5_D435i/blob/master/yolov5_D435i_2.0/image/distance.png)
+![](https://github.com/maple0leaves/YOLOv5_D435i/blob/master/yolov5_D435i_2.0/image/distance.gif)
