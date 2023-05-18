@@ -9,6 +9,8 @@ Combined with YOLOv5 to develop Intel_Realsense_D435i to realize real-time detec
 ## 1.Use and Environment:
 如果您想直接使用，请使用yolov5_D435i_2.0，yolov5_D435i_1.0是本人学习时的版本。
 ### Environment:
+1.一个可运行yolov5的环境
+2.一个Intel realsense D435i相机,pyrealsense2和各种依赖库
 ```
 1. could run yolov5
 2. pip install -r requirements.txt
@@ -51,7 +53,14 @@ target: ['person']#检测哪些类别之间的距离 which objects you want to d
 config.enable_stream(rs.stream.depth, 1280, 720, rs.format.z16, 30)
 config.enable_stream(rs.stream.color, 1280, 720, rs.format.bgr8, 30)
 ```
-
+要使用USB3.0接口，不然会报错
+yolov5_D435i_2.0/config/yolov5s.yaml中的target是您想要检测距离的类别
 ## 3.Result
 ![](https://github.com/maple0leaves/YOLOv5_D435i/blob/master/yolov5_D435i_2.0/image/distance.png)
 ![](https://github.com/maple0leaves/YOLOv5_D435i/blob/master/yolov5_D435i_2.0/image/distance.gif)
+## 4.Reference
+[](https://github.com/ultralytics/yolov5)
+[](https://github.com/killnice/yolov5-D435i)
+[](https://github.com/Thinkin99/yolov5_d435i_detection)
+## 5.More Detail
+[]()
