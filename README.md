@@ -7,7 +7,8 @@ Combined with YOLOv5 to develop Intel_Realsense_D435i to realize real-time detec
 
 [Intel Relsense D435i深度摄像头](https://www.intelrealsense.com/zh-hans/depth-camera-d435i/):Intel使用realsense(实感)技术开发出来的的深度摄像头，可以获取目标的三维信息
 ## 1.Use and Environment:
-如果您想直接使用，请使用yolov5_D435i_2.0，yolov5_D435i_1.0是本人学习时的版本。
+如果您想直接使用，请使用yolov5_D435i_2.0
+yolov5_D435i_1.0是本人学习时的版本。
 ### Environment:
 1.一个可运行yolov5的环境
 
@@ -70,3 +71,5 @@ yolov5_D435i_2.0/config/yolov5s.yaml中的target是您想要检测距离的类�
 ## 5.More Detail
 想要了解更多开发细节请看
 [https://github.com/maple0leaves/YOLOv5_D435i/blob/master/yolov5_D435i_2.0/detail.txt](https://github.com/maple0leaves/YOLOv5_D435i/blob/master/yolov5_D435i_2.0/detail.txt)
+有任何问题都可以在issues中留言
+感谢您的到来！
