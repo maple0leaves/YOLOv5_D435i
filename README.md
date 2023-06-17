@@ -73,6 +73,6 @@ yolov5_D435i_2.0/config/yolov5s.yaml中的target是您想要检测距离的类�
 想要了解更多开发细节请看
 [https://github.com/maple0leaves/YOLOv5_D435i/blob/master/yolov5_D435i_2.0/detail.txt](https://github.com/maple0leaves/YOLOv5_D435i/blob/master/yolov5_D435i_2.0/detail.txt)
 
-有任何问题都可以在issues中留言，这个项目完全由我个人开发，如果帮助到了您，恳请标注本项目地址[https://github.com/maple0leaves/YOLOv5_D435i]
+有任何问题都可以在issues中留言，这个项目完全由我个人开发，如果帮助到了您，还请标注本项目地址[https://github.com/maple0leaves/YOLOv5_D435i]
 
 感谢您的到来！
